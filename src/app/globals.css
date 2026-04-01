@@ -1,17 +1,46 @@
 @import "tailwindcss";
 
-/* :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+:root {
+  --color-text: #ffffff;
+  --color-error: #980000;
+  --color-paper: #232323;
+  --color-primary: #009688;
+  --color-background: #000000;
+  --color-primary-contrast: #ffffff;
+};
 
+/*Inclusão de cores padrão na página 'page.tsx' */
 @theme inline {
-  --color-background: var(--background);
+  --color-text: var(--color-text);
+  --color-erro: var(--color-error);
+  --color-paper: var(--color-paper);
+  --color-primary: var(--color-primary);
+  --color-background: var(--color-background);
+  --color-primary-contrast: var(--color-primary-contrast);
+  
+  /* --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-mono: var(--font-geist-mono); */
 }
 
+/*O '@' é do tailwind */
+html, body {
+  @apply bg-background text-text w-screen h-screen;
+
+}
+
+/*Caso quiséssemos deixar o tema claro ou escuro*/
+/* html[light] {
+  --color-text: #000000;
+  --color-error: #980000;
+  --color-paper: #ffffff;
+  --color-primary: #009688;
+  --color-background: #cacaca;
+  --color-primary-contrast: #ffffff;
+} */
+
+/*
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
