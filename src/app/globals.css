@@ -17,17 +17,15 @@
   --color-primary: var(--color-primary);
   --color-background: var(--color-background);
   --color-primary-contrast: var(--color-primary-contrast);
-  
-  /* --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono); */
 }
 
 /*O '@' é do tailwind */
 html, body {
-  @apply bg-background text-text w-screen h-screen;
+  @apply bg-background text-text w-screen h-screen underline-offset-4;
+}
 
+a {
+  @apply hover:underline active:opacity-50 transition-opacity;
 }
 
 /*Caso quiséssemos deixar o tema claro ou escuro*/
