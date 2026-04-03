@@ -1,3 +1,4 @@
+import { Section } from "@/components/section/section";
 import { Metadata } from "next";
 
 
@@ -10,8 +11,10 @@ export default function PageCursos() {
     /*Para a página ser válida, deve retornar um 'html'*/
     return (
         <main>
-            Cursos
+            <Section 
+                title="Veja mais cursos"
+                variant="grid"
+            />
         </main>
-
     );
-}
+};
