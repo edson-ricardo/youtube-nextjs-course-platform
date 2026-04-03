@@ -10,6 +10,7 @@ export const Header = () => {
   const currentPath = usePathname();
  
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setTitle(document.title);
     setDrawer(false);
   }, [currentPath]);
